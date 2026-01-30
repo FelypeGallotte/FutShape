@@ -1,0 +1,88 @@
+/* Importando estilos base da página (se necessário) */
+/* Se este arquivo for importado em musculacao.jsx, ele deve ser complementar ao pages.css */
+/* Vou usar as cores definidas no seu background: */
+
+.musculacao-content {
+  padding: 20px;
+}
+
+.musculacao-subtitle {
+  font-size: 32px;
+  font-weight: 900;
+  color: #00cc66; /* Verde claro vibrante */
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0, 255, 100, 0.7);
+  letter-spacing: 2px;
+}
+
+
+.grid-treino {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  padding: 0 10px; 
+  margin: 0 auto;
+}
+
+
+.dia-card {
+  background-color: #002211; 
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #00cc66; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dia-titulo {
+  font-size: 18px;
+  font-weight: 900;
+  color: #00ff80; 
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #004422; 
+}
+
+
+.lista-exercicios {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.lista-exercicios li {
+  font-size: 14px;
+  color: white; 
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.lista-exercicios li::before {
+  content: '•';
+  color: #00ff80;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+@media (max-width: 768px) {
+  .grid-treino {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .dia-card {
+      padding: 15px; 
+  }
+
+  .musculacao-content {
+      padding: 10px; 
+  }
+  
+}

@@ -1,0 +1,103 @@
+
+
+body {
+  
+  margin: 0;
+  
+  background: linear-gradient(to bottom, #00cc66 0%, #004422 70%, #002211 100%);
+  min-height: 100vh; 
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden; 
+}
+
+
+.container {
+  text-align: center;
+  max-width: 400px; 
+  margin: 0 auto; 
+  padding-top: 50px; 
+}
+
+.titulo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 48px; 
+  font-weight: 900; 
+  color: black; 
+  letter-spacing: 2px; 
+  margin-bottom: 30px; 
+  text-shadow: 0 0 10px rgba(132, 173, 148, 0.8), 0 0 20px rgba(0, 255, 100, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+.card {
+  background-color: #00cc66;
+  padding: 30px;
+  border-radius: 10px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #001a00;
+}
+
+.card label {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #001a00;
+  text-align: left;
+}
+
+.card input {
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.card button {
+  background-color: #001a00;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: #004d26;
+  transform: scale(1.05);
+}
+
+.card select {
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background-color: #ffffff;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #001a00;
+  cursor: pointer;
+  padding-right: 30px; 
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%23001a00' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+

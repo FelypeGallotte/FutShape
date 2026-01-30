@@ -1,0 +1,153 @@
+.home-container {
+  background: linear-gradient(to bottom, #00cc66 0%, #004422 70%, #002211 100%);
+  min-height: 100vh;
+  color: #001E1A;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  
+}
+
+
+.header {
+  background-color: #001E1A; 
+  color: #00ff80;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  text-shadow: 0 0 10px rgba(0, 255, 100, 0.5); 
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 150px; 
+  justify-content: flex-start;
+}
+
+.user-circle {
+  width: 15px;
+  height: 15px;
+  background-color: #00ff80; 
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #00ff80;
+}
+
+
+.title {
+  font-size: 28px;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #00ff80; 
+  
+  
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  width: 25px;
+  color: #00ff80;
+  
+  position: relative;
+ 
+  min-width: 150px; 
+  text-align: right;
+}
+
+
+.main {
+  margin-top: 60px;
+}
+
+.subtitle {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.button-container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.main-button {
+  background-color: #001E1A;
+  color: #00ff80;
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 20px 60px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.main-button:hover {
+  background-color: #004b2d;
+  transform: scale(1.05);
+}
+h2 {
+  font-size: 28px; 
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(132, 173, 148, 0.8), 0 0 20px rgba(0, 255, 100, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+p {
+  font-size: 18px; 
+  line-height: 1.6; 
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif; 
+  color: #001a00;
+  text-shadow: 0 0 10px rgba(132, 173, 148, 0.8), 0 0 20px rgba(0, 255, 100, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+@media (max-width: 600px) {
+  .user-box, .menu-icon {
+    min-width: auto; 
+  }
+  
+  .user-box {
+    
+    display: none; 
+  }
+  
+  .title {
+     position: relative; 
+     transform: none;
+     left: auto;
+     flex-grow: 1; 
+  }
+
+  .header {
+    justify-content: space-around;
+  }
+}

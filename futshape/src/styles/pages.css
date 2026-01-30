@@ -1,0 +1,93 @@
+
+
+.page-container {
+
+background: linear-gradient(to bottom, #00cc66 0%, #004422 70%, #002211 100%);
+min-height: 100vh;
+color: white; 
+font-family: "Poppins", sans-serif;
+text-align: center;
+
+width: 100%;
+}
+
+
+
+.page-header {
+background-color: #001E1A;
+color: #00ff80;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 30px;
+text-shadow: 0 0 10px rgba(132, 173, 148, 0.8), 0 0 20px rgba(0, 255, 100, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.8);
+ 
+
+position: relative; 
+ 
+position: sticky; 
+top: 0;
+z-index: 10;
+}
+
+
+.back {
+color: #00ff80;
+text-decoration: none;
+font-weight: bold;
+  
+
+  width: 120px; 
+  text-align: left;
+}
+
+.back:hover {
+text-decoration: underline;
+}
+
+
+.page-title {
+font-size: 26px;
+font-weight: 900;
+ 
+  
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%); 
+  
+  margin: 0; 
+  padding: 0 10px;
+  z-index: 11;
+}
+
+
+.page-header > div:last-child {
+    
+    width: 120px; 
+}
+
+
+
+.page-content {
+   font-size: 16px;
+font-weight: 500; 
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+@media (max-width: 600px) {
+  .page-header {
+    padding: 15px 15px;
+  }
+
+  .back, .page-header > div:last-child {
+    width: 80px; 
+    font-size: 14px;
+  }
+  
+  .page-title {
+    font-size: 20px;
+  }
+}
